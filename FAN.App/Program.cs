@@ -14,10 +14,16 @@ namespace FAN.App
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            builder.AddDataLayer();
+
             var app = builder.Build();
+
+            DbInitializer.InitializeDb(app);
 
             app.UseSession();
 
+
+    
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
             {
