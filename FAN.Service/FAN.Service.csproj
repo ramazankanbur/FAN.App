@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FAN.Infrastructure\FAN.Infrastructure.csproj" />
+    <ProjectReference Include="..\FAN.Model\FAN.Model.csproj" />
+  </ItemGroup>
+
 </Project>

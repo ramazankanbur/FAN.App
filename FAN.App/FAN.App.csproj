@@ -8,6 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\Htmls\*" />
+  
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8">
       <PrivateAssets>all</PrivateAssets>
@@ -22,6 +27,7 @@
   <ItemGroup>
     <ProjectReference Include="..\FAN.Infrastructure\FAN.Infrastructure.csproj" />
     <ProjectReference Include="..\FAN.Model\FAN.Model.csproj" />
+    <ProjectReference Include="..\FAN.Service\FAN.Service.csproj" />
   </ItemGroup>
 
 </Project>
